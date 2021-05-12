@@ -17,7 +17,7 @@ function createP5Canvas(x, y, fragShader, choice = 0){
       theShader.setUniform('u_resolution', [p5.width, p5.height]);
       theShader.setUniform('u_mouse', [p5.mouseX, p5.map(p5.mouseY, 0 , p5.height, p5.height, 0)]);
       theShader.setUniform('u_choice', choice);
-
+      
       p5.shader(theShader);
       p5.rect(0,0,p5.width,p5.height);
     }
