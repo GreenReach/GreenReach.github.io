@@ -2,10 +2,20 @@
     display:inline-block;
     position: relative;
 
-    background-color: blue;
+    /* Div size  */
+    /* background-color: blue; */
     height: 25vh;
     width: 50vh;
     top: 0vh;
+
+    /* Div text */
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+
+    /* Div photo */
+    background-image:url("drawer-outer.png");
+    background-size: cover;
 }
 
 .slider_down{
@@ -13,26 +23,43 @@
     position: relative;
     z-index: 1;
 
-    background-color: blue;
+    /* background-color: blue; */
     height: 25vh;
     width: 50vh;
     top: 25vh;
 
+    /* Div text */
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+    
     animation-name: slide_down;
     animation-duration: 0.5s;
+
+    background:url("drawer-outer.png");
+    background-size: cover;
 }
 
 .slider_up{
     display:inline-block;
     position: relative;
 
-    background-color: blue;
+    /* background-color: blue; */
     height: 25vh;
     width: 50vh;
     top: 0vh;
 
+
+    /* Div text */
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+
     animation-name: slide_up;
     animation-duration: 0.5s;
+
+    background:url("drawer-outer.png");
+    background-size: cover;
 }
 
 @keyframes slide_down {
@@ -41,8 +68,8 @@
 }
 
 @keyframes slide_up {
-    from {top: 25vh;}
-    to { top: 0vh;}
+    from {top: 25vh; z-index: 1;}
+    to { top: 0vh; z-index: 0;}
 }
 
 
@@ -54,6 +81,11 @@
     background-color:brown;
     height: 25vh;
     width: 50vh;
+
+    /* Div text */
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
 }
 
 .separator{
@@ -66,6 +98,4 @@
 }
 
 .line{
-
-    display: flex;
-}
+    display:inline-flex
