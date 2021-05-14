@@ -1,0 +1,71 @@
+.slider_default{
+    display:inline-block;
+    position: relative;
+
+    background-color: blue;
+    height: 25vh;
+    width: 50vh;
+    top: 0vh;
+}
+
+.slider_down{
+    display:inline-block;
+    position: relative;
+    z-index: 1;
+
+    background-color: blue;
+    height: 25vh;
+    width: 50vh;
+    top: 25vh;
+
+    animation-name: slide_down;
+    animation-duration: 0.5s;
+}
+
+.slider_up{
+    display:inline-block;
+    position: relative;
+
+    background-color: blue;
+    height: 25vh;
+    width: 50vh;
+    top: 0vh;
+
+    animation-name: slide_up;
+    animation-duration: 0.5s;
+}
+
+@keyframes slide_down {
+    from {top: 0vh;}
+    to { top: 25vh;}
+}
+
+@keyframes slide_up {
+    from {top: 25vh;}
+    to { top: 0vh;}
+}
+
+
+.slider_inside{
+    display:inline-block;
+    position: absolute;
+    z-index: -1;
+
+    background-color:brown;
+    height: 25vh;
+    width: 50vh;
+}
+
+.separator{
+    height: 25vh;
+    width: 25vh;
+}
+
+.slider{
+
+}
+
+.line{
+
+    display: flex;
+}
