@@ -3,76 +3,108 @@ body {
     margin: 0px;
 }
 
-p{
+p {
     margin: 0px;
     font-family: 'Rowdies', cursive;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
     font-family: 'Rowdies', cursive;
 }
 
-.contacts-list{
+.contacts-list {
     display: flex;
     list-style: none;
-    margin:0px;
-    
+    margin: 0px;
 }
 
-.contact{
+.contact {
     display: flex;
     line-height: 25px;
     padding: 3px 10px 3px 10px;
     transition: background-color 0.1s ease-out 100ms;
-
 }
 
-.contact:hover{
-    background-color:rgb(151, 171, 177);
+.contact:hover {
+    background-color: rgb(151, 171, 177);
 }
 
-.contact-logo{
+.contact-logo {
     width: 25px;
     padding-right: 2px;
     position: relative;
 }
 
-.title-font{
-    color:rgb(6, 8, 8);
+.title-font {
+    color: rgb(6, 8, 8);
     font-family: 'Rowdies', cursive;
     text-align: center;
-    
+
     line-height: 100px;
     font-size: 75px;
     margin-top: -5px;
 }
 
-.title-bcg{
-    background-color: rgba(151,171,177, 0.6);
+.title-bcg {
+    background-color: rgba(151, 171, 177, 0.6);
     padding-left: 10px;
     padding-right: 10px;
     width: 500px;
     height: 100px;
     margin: auto;
-    position:absolute;
+    position: absolute;
     left: 50%;
     margin-left: -200px;
     top: 50%;
     margin-top: -310px;
 }
 
-.title-banner{
-    background-color:rgb(96,116,121) ;
+.title-banner {
+    background-color: rgb(96, 116, 121);
     border-top: 7px solid rgb(151, 171, 177);
     border-bottom: 7px solid rgb(151, 171, 177);
 }
 
+.p5-table {
+    display: table;
+    border-spacing: 10px;
+    margin: 0 auto;
+}
 
-#title-background{
+.p5-table-row {
+    display: table-row;
+    width: auto;
+}
+
+.p5-table-cell {
+    height: 300px;
+    width: 200px;
+    background-color: rgb(246, 145, 174);
+    border-radius: 25px;
+    /* border: 2px solid rgb(237, 34, 93); */
+    display: table-cell;
+    position: relative;
+    transition: box-shadow 0.1s ease-out 100ms;
+    z-index: 1;
+}
+
+.p5-table-cell:hover{
+    box-shadow: 0px 0px 4px 3px rgb(237, 34, 93);
+}
+
+.table-cell-photo {
+    width: 200px;
+    height: 150px;
+    border-radius: 25px 25px 0px 0px ;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#title-background {
     height: 350px;
     display: block;
     margin: auto;
 }
-
