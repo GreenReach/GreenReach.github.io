@@ -45,8 +45,8 @@ function draw() {
   square(antX*squareSize, antY*squareSize, squareSize);
   
   step++;
-  if(step%100 ==0)
-  print(step);
+  // if(step%100 ==0)
+  // print(step);
 }
 
 

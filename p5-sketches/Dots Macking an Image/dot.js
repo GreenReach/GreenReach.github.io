@@ -6,7 +6,6 @@ class Dot{
       this.layer = l;
       this.layerRow = lr;
       this.layerColumn = lc;
-      print(l,lc,lr);
       fill(layersColors[l][lc][lr]);
       circle(x,y,d);
     }
