@@ -57,11 +57,11 @@ a {
     position: absolute;
     left: 50%;
     margin-left: -200px;
-    top: 50%;
-    margin-top: -310px;
+    top: 10px
 }
 
 .title-banner {
+    position: relative;
     background-color: rgb(96, 116, 121);
     border-top: 7px solid rgb(151, 171, 177);
     border-bottom: 7px solid rgb(151, 171, 177);

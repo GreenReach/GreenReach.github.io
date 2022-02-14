@@ -12,7 +12,9 @@ let distModeB, distMode = 1; // 1 normal, -1 fisheye
 let newWallStart, isFirstSelection = true;
 
 function setup() {
-  createCanvas(400 + screenW * lineWidth, 500);
+  let cnv = createCanvas(400 + screenW * lineWidth, 500);
+  cnv.parent('canvas-holder')
+
   frameRate(30);
   strokeCap(SQUARE);
   noSmooth();
@@ -23,19 +25,20 @@ function setup() {
   angIncrement = fov / screenW;
 
   fovSlider = createSlider(1, 360, fov, 1);
+  fovSlider.parent("input-holder")
 
-  distModeB = createButton("Render Mode")
+  distModeB = createButton("Render Mode: Normal")
   distModeB.mousePressed(SwitchDistMode);
+  distModeB.parent("input-holder")
 
-  let b1 = new Wall(0, 0, 0, 400);
-  let b2 = new Wall(0, 400, 400, 400);
-  let b3 = new Wall(400, 400, 400, 0);
+  let b1 = new Wall(0, 0, 0, 500);
+  let b2 = new Wall(0, 500, 397, 500);
+  let b3 = new Wall(397, 500, 397, 0);
   let b4 = new Wall(400, 0, 0, 0);
 
   let wall1 = new Wall(100, 10, 390, 10);
   let wall2 = new Wall(390, 10, 390, 100);
   let wall3 = new Wall(390, 100, 100, 100);
-
   let wall4 = new Wall(100, 10, 10, 75);
   let wall5 = new Wall(10, 75, 10, 390);
 
@@ -116,7 +119,7 @@ function DrawLine(point, rayDir, lineIndex, color) {
   strokeWeight(5);
   stroke(255);
 
-  line(400 + lineIndex * lineWidth, 0, 400 + lineIndex * lineWidth, 400)
+  line(400 + lineIndex * lineWidth, 0, 400 + lineIndex * lineWidth, 500)
   if (point != null) {
 
     let dist;
@@ -147,9 +150,16 @@ function DrawLine(point, rayDir, lineIndex, color) {
 
 function SwitchDistMode() {
   distMode = -distMode;
+  if(distMode == 1)
+    distModeB.html("Render Mode: Normal");
+  else
+    distModeB.html("Render Mode: Fisheye");
 }
 
 function mouseClicked() {
+  if(mouseX < 0 || mouseX > 400 || mouseY < 0 || mouseY > 500)
+    return;
+
   if (isFirstSelection) {
     newWallStart.x = mouseX;
     newWallStart.y = mouseY;

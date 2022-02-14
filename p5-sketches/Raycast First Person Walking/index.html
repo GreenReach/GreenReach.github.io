@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sketch</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Sketch</title>
 
-    <script src="../../libraries/p5.min.js"></script>
-    <script src="../../libraries/p5.sound.min.js"></script>
-  </head>
+  <link rel="stylesheet" type="text/css" href="style.css">
 
-  <body>
-    <script src="Wall.js"></script>
-    <script src="Ray.js"></script>
-    <script src="sketch.js"></script>
-  </body>
+  <script src="../../libraries/p5.min.js"></script>
+  <script src="../../libraries/p5.sound.min.js"></script>
+</head>
+
+<body>
+  <div style="text-align: center;">
+    <h1>First person rendere using raycasting</h1>
+    <p>Instructions: Use WASD to move. On the left you can see your character from a 2D top-down perspective while on
+      the
+      right you can see the characte's perspective in false 3D. <br>
+      By clicking on the right side you can start creating wals, by clicking another point you choose where the wall
+      will end, walls have random colors. <br>
+      The slider changes the FoV (filed of view from 1 to 360 degrees) while the button showcases 2 render modes for
+      differrent effects<br>
+      Find more about this renderer <a href="https://permadi.com/1996/05/ray-casting-tutorial-table-of-contents/" target= "_blank"> here </a>
+      and <a href="https://lodev.org/cgtutor/raycasting.html" target= "_blank"> here</a> <br>
+    </p>
+  </div>
+
+  <div id="canvas-holder"></div>
+  <br>
+  <div id="input-holder"></div>
+
+  <script src="Wall.js"></script>
+  <script src="Ray.js"></script>
+  <script src="sketch.js"></script>
+</body>
+
 </html>
