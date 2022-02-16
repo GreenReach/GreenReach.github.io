@@ -4,5 +4,20 @@ html, body {
 }
 
 canvas {
-  display: block;
+  display: inline;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+input, button{
+  margin: 0px 10px 0px 10px;
+}
+
+#canvas-holder{
+  display: flex;
+}
+
+#input-holder{
+  display: flex;
+  justify-content: center;
 }

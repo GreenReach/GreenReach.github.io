@@ -1,12 +1,30 @@
-<!DOCTYPE html><html lang="en"><head>
-    <script src="../../libraries/p5.min.js"></script>
-    <script src="../../libraries/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
 
-  </head>
-  <body>
-    <script src="sketch.js"></script>
-  
+<head>
+  <title>Conway's Game of Life</title>
+  <script src="../../libraries/p5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
 
-</body></html>
+</head>
+
+<body>
+  <div style="text-align: center;">
+    <h1>Conway's Game of Life</h1>
+    <p>Conwas's classic game of life. Press any square to create life and then press start to see it evolve.<br>
+      You can create life while the simulation is running. The rules fro the game can be found
+      <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank"> here</a> <br>
+    </p>
+  </div>
+
+  <div id="canvas-holder"></div>
+  <br>
+  <div id="input-holder"></div>
+
+  <script src="sketch.js"></script>
+
+
+</body>
+
+</html>

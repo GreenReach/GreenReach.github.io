@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sketch</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Photomosaics</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="../../libraries/p5.min.js"></script>
+  <script src="../../libraries/p5.sound.min.js"></script>
+</head>
 
-    <script src="../../libraries/p5.min.js"></script>
-    <script src="../../libraries/p5.sound.min.js"></script>
-  </head>
+<body>
+  <div style="text-align: center;">
+    <h1>Photomosaics</h1>
+    <p>A Photomosaic is a picture made out of other pictures. After the photomosaic loads (takes about 10 seconds) <br>
+      you will see on the right the original image and on the left the resulting one. There are a number of algorithms that <br>
+      can be used to get this effect, using the buttons in the bottom part you can see the difference between a naive <br>
+      method and a more complex one. More info <a href="https://www.geeksforgeeks.org/implementing-photomosaics/" target="_blank">here</a>. <br>
+    </p>
+  </div>
 
-  <body>
-    <script src="sketch.js"></script>
-  </body>
+  <div id="canvas-holder"></div>
+  <br>
+  <div id="input-holder"></div>
+
+  <script src="sketch.js"></script>
+</body>
+
 </html>

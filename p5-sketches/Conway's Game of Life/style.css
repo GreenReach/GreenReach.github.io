@@ -4,4 +4,15 @@ html, body {
 }
 canvas {
   display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+input, button{
+  margin: 0px 10px 0px 10px;
+}
+
+#input-holder{
+  display: flex;
+  justify-content: center;
 }

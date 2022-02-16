@@ -1,4 +1,4 @@
-let MIN_DIAMETER = 25;
+let MIN_DIAMETER = 7;
 
 let img;
 let dim;
@@ -14,7 +14,8 @@ function setup() {
   noStroke();
   
   dim = min(img.width, img.height);
-  createCanvas(dim, dim);
+  let cnv = createCanvas(dim, dim);
+  cnv.parent("canvas-holder")
   img.resize(dim,dim);
   //image(img,0,0);
   

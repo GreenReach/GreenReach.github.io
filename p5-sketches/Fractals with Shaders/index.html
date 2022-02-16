@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sketch</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Showing CPU vs GPU computation difference using fractals</title>
 
-    <script src="../../libraries/p5.min.js"></script>
-    <script src="../../libraries/p5.sound.min.js"></script>
-  </head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="../../libraries/p5.min.js"></script>
+</head>
 
-  <body>
-    <script src="sketch.js"></script>
-  </body>
+<body>
+  <div style="text-align: center;">
+    <h1>Showing CPU vs GPU computation difference using fractals</h1>
+    <p>The black fractal is rendered using shaders that run on the GPU while the red one uses just the CPU. After both <br>
+      are rendered you can see the time it took for each. Sometimes the CPU shader will appear quicker, even though the <br>
+      times show the opposite. I believe this happens because of the slight overhead for translating WebGL API calls and shaders to<br>
+      your OS graphics API, though I might be wrong, if you know why this is don't be a stranger. This might be better explained 
+      <a href="https://docs.unity3d.com/Manual/webgl-performance.html" target="_blank"> here</a>. <br>
+    </p>
+  </div>
+
+  <p id="completion-time" style="text-align: center;"></p>
+  <div id="canvas-holder"></div>
+
+  <script src="sketch.js"></script>
+</body>
+
 </html>

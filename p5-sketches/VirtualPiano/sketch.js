@@ -37,6 +37,9 @@ function setup() {
 }
 
 function mousePressed() {
+  if(mouseX < 0 || mouseX > 1200 || mouseY < 0 || mouseY > 300)
+    return;
+    
   let whiteNoteIndex = int(mouseX / whiteNoteWidth);
 
   // check if lower part is pressed
