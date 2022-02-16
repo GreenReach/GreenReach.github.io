@@ -1,0 +1,21 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+input, button {
+    margin: 0px 10px 0px 10px
+}
+
+.input-holder {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Fractals</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="../../libraries/p5.min.js"></script>
+</head>
+
+<body>
+  <div style="text-align: center;">
+    <h1>Various Fractals</h1>
+    <p>An assortment of different context-free languages that, using turtle graphics axioms, create different effects.<br>
+      Pressing the buttons you can see the different steps in their creation (or by pressing "A") and also apply a slight random effect<br>
+      to them by using the "Disperse" button(or by pressing "S") ( works best on plant inspired axioms). Sadly, in this view, not all<br>
+      axioms work as intended. Find more about this project <a href="https://disquiet.in/posts/tag/l-system" target="_blank"> here</a>. <br>
+    </p>
+  </div>
+
+  <div class="canvas-holder" id="hilbertCurveCanvas"></div>
+  <br>
+  <div class="input-holder" id="hilbertCurveInput"></div>
+  <br><br>
+
+  <div class="canvas-holder" id="juliaCanvas"></div>
+  <br>
+  <div class="input-holder" id="juliaInput"></div>
+  <br><br>
+
+  <div class="canvas-holder" id="mandelbrootCanvas"></div>
+  <br>
+  <div class="input-holder" id="mandelbrootInput"></div>
+  <br><br>
+
+  <div class="canvas-holder" id="kochSnowflakeCanvas"></div>
+  <br>
+  <div class="input-holder" id="kochSnowflakeInput"></div>
+  <br><br>
+
+  <div class="canvas-holder" id="sierpinskiCarpetCanvas"></div>
+  <br>
+  <div class="input-holder" id="sierpinskiCarpetInput"></div>
+  <br><br>
+
+  <div class="canvas-holder" id="sierpinskiTriangleCanvas"></div>
+  <br>
+  <div class="input-holder" id="sierpinskiTriangleInput"></div>
+  <br><br>
+
+  <script src="hilbertCurve.js"></script>
+  <script src="juliaFractal.js"></script>
+  <script src="mandelbrootFractal.js"></script>
+  <script src="kochSnowflake.js"></script>
+  <script src="sierpinskiCarpet.js"></script>
+  <script src="sierpinskiTrangle.js"></script>
+
+</body>
+
+</html>
