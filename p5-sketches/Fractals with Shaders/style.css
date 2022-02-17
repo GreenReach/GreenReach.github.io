@@ -9,15 +9,19 @@ canvas {
   margin-left: auto;
 }
 
-input, button{
+input, button {
   margin: 0px 10px 0px 10px;
 }
 
-#canvas-holder{
+h1, p {
+  font-family: 'Rowdies', cursive;
+}
+
+#canvas-holder {
   display: flex;
 }
 
-#input-holder{
+#input-holder {
   display: flex;
   justify-content: center;
 }

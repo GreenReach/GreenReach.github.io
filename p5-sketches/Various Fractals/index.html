@@ -8,47 +8,106 @@
   <title>Fractals</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="../../libraries/p5.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div style="text-align: center;">
     <h1>Various Fractals</h1>
-    <p>An assortment of different context-free languages that, using turtle graphics axioms, create different effects.<br>
-      Pressing the buttons you can see the different steps in their creation (or by pressing "A") and also apply a slight random effect<br>
-      to them by using the "Disperse" button(or by pressing "S") ( works best on plant inspired axioms). Sadly, in this view, not all<br>
-      axioms work as intended. Find more about this project <a href="https://disquiet.in/posts/tag/l-system" target="_blank"> here</a>. <br>
+    <p>A collection of different fractals I implemented when learning the library. For every one you can see each step in its
+      construction. <br>
     </p>
   </div>
 
-  <div class="canvas-holder" id="hilbertCurveCanvas"></div>
-  <br>
-  <div class="input-holder" id="hilbertCurveInput"></div>
-  <br><br>
+  <table style="margin-left: auto;margin-right: auto;">
+    <tr>
 
-  <div class="canvas-holder" id="juliaCanvas"></div>
-  <br>
-  <div class="input-holder" id="juliaInput"></div>
-  <br><br>
+      <td>
+        <p class="fractal-description">A very nice fractal known as the Hilbert Curve.<br>
+          More information <a href="https://en.wikipedia.org/wiki/Hilbert_curve" target="_blank">here</a>.</p>
+      </td>
 
-  <div class="canvas-holder" id="mandelbrootCanvas"></div>
-  <br>
-  <div class="input-holder" id="mandelbrootInput"></div>
-  <br><br>
+      <td>
+        <p class="fractal-description">One of the most known fractals, Mandelbroot Fractal.<br>
+          More information <a href="https://en.wikipedia.org/wiki/Mandelbrot_set" target="_blank">here</a>.</p>
+      </td>
 
-  <div class="canvas-holder" id="kochSnowflakeCanvas"></div>
-  <br>
-  <div class="input-holder" id="kochSnowflakeInput"></div>
-  <br><br>
+      <td>
+        <p class="fractal-description">Mandelbroot's sister fractal, Julia Fractal<br>
+          More information <a href="https://en.wikipedia.org/wiki/Mandelbrot_set" target="_blank">here</a>.</p>
+      </td>
 
-  <div class="canvas-holder" id="sierpinskiCarpetCanvas"></div>
-  <br>
-  <div class="input-holder" id="sierpinskiCarpetInput"></div>
-  <br><br>
+    </tr>
+    <tr>
 
-  <div class="canvas-holder" id="sierpinskiTriangleCanvas"></div>
-  <br>
-  <div class="input-holder" id="sierpinskiTriangleInput"></div>
-  <br><br>
+      <td>
+        <div class="canvas-holder" id="hilbertCurveCanvas"></div>
+        <br>
+        <div class="input-holder" id="hilbertCurveInput"></div>
+        <br><br>
+      </td>
+
+      <td>
+        <div class="canvas-holder" id="mandelbrootCanvas"></div>
+        <br>
+        <div class="input-holder" id="mandelbrootInput"></div>
+        <br><br>
+      </td>
+
+      <td>
+        <div class="canvas-holder" id="juliaCanvas"></div>
+        <br>
+        <div class="input-holder" id="juliaInput"></div>
+        <br><br>
+      </td>
+
+    </tr>
+    <tr>
+
+      <td>
+        <p class="fractal-description">One of the earliest fractals to have been described.<br> 
+        Koch Snowflake - more information <a href="https://en.wikipedia.org/wiki/Koch_snowflake" target="_blank">here</a>.</p>
+      </td>
+
+      <td>
+        <p class="fractal-description">A plane fractal and a generalization of the Cantor set.<br>
+          Sierpinski Carpet - more information <a href="https://en.wikipedia.org/wiki/Sierpi%C5%84ski_carpet" target="_blank">here</a>.</p>
+      </td>
+
+      <td>
+        <p class="fractal-description">A fractal attractive fixed set with the shape of an triangle<br>
+          Sierpinski Triangle - more information <a href="https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle" target="_blank">here</a>.</p>
+      </td>
+
+    </tr>
+    <tr>
+
+      <td>
+        <div class="canvas-holder" id="kochSnowflakeCanvas"></div>
+        <br>
+        <div class="input-holder" id="kochSnowflakeInput"></div>
+        <br><br>
+      </td>
+
+      <td>
+        <div class="canvas-holder" id="sierpinskiCarpetCanvas"></div>
+        <br>
+        <div class="input-holder" id="sierpinskiCarpetInput"></div>
+        <br><br>
+      </td>
+
+      <td>
+        <div class="canvas-holder" id="sierpinskiTriangleCanvas"></div>
+        <br>
+        <div class="input-holder" id="sierpinskiTriangleInput"></div>
+        <br><br>
+      </td>
+
+    </tr>
+  </table>
 
   <script src="hilbertCurve.js"></script>
   <script src="juliaFractal.js"></script>
@@ -56,7 +115,6 @@
   <script src="kochSnowflake.js"></script>
   <script src="sierpinskiCarpet.js"></script>
   <script src="sierpinskiTrangle.js"></script>
-
 </body>
 
 </html>

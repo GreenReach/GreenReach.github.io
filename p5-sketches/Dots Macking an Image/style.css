@@ -13,6 +13,10 @@ input, button{
   margin: 0px 10px 0px 10px;
 }
 
+h1,p{
+  font-family: 'Rowdies', cursive;
+}
+
 #input-holder{
   display: flex;
   justify-content: center;

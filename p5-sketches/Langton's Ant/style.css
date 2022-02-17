@@ -2,17 +2,22 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
 canvas {
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
 
-input, button{
+input, button {
   margin: 0px 10px 0px 10px;
 }
 
-#input-holder{
+h1, p {
+  font-family: 'Rowdies', cursive;
+}
+
+#input-holder {
   display: flex;
   justify-content: center;
 }
